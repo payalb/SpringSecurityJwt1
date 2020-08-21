@@ -18,3 +18,8 @@ Angular can store this token in localstorage
 2nd req->  Yes, parse the token….
 3rd request -> token is expired -> JwtAuthenticationTokenFilter will extract the token, but token invalid-> exception -> token expired
 
+https://medium.com/swlh/spring-boot-security-jwt-hello-world-example-b479e457664c
+
+AbstractAuthenticationProcessingFilter, if authentication is success, will set authentication object directly in SecurityContext
+Else if we use OncePerRequestFilter, we need to do it manually
+You can use any
